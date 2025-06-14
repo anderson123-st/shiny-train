@@ -1,0 +1,15 @@
+body {
+  margin: 0; font-family: Arial; background-color: #121212; color: white;
+}
+.login, .painel {
+  padding: 20px;
+}
+input, button {
+  display: block; margin: 10px 0; padding: 10px;
+}
+nav {
+  display: flex; gap: 10px; background: #1f1f1f; padding: 10px;
+}
+.aba { padding: 20px; }
+.hidden { display: none; }
+canvas { background: white; border-radius: 8px; }

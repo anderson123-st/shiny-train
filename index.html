@@ -1,0 +1,35 @@
+index_html = """<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel do Lojista</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://kit.fontawesome.com/a2e0b5d8cb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="login" id="login">
+    <h2>Login</h2>
+    <input type="text" id="usuario" placeholder="Usuário"/>
+    <input type="password" id="senha" placeholder="Senha"/>
+    <button onclick="logar()">Entrar</button>
+  </div>
+
+  <div class="painel hidden" id="painel">
+    <nav>
+      <button onclick="mostrarAba('dashboard')"><i class="fas fa-chart-line"></i> Dashboard</button>
+      <button onclick="mostrarAba('produtos')"><i class="fas fa-boxes"></i> Produtos</button>
+    </nav>
+    <section id="dashboard" class="aba">
+      <h2>Resumo de Estoque</h2>
+      <canvas id="grafico"></canvas>
+    </section>
+    <section id="produtos" class="aba hidden">
+      <h2>Gerenciar Produtos</h2>
+      <div id="lista-produtos"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
